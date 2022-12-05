@@ -61,6 +61,7 @@ body{
     /* posicionamiento en eje secundario*/
     /* stretch default*/
     align-items: center;
+    position: relative; left: 3%; 
 
 
     /*align-content: space-between;*/
@@ -109,7 +110,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-top: 4px;
-    padding-left: 30%;
+    padding-left: 20%;
     padding-right: 30%;
     text-align: center;
 }
@@ -154,4 +155,11 @@ nav ul li{
 
 .literatura__juvenil_section_pagina{
     text-align: center;
+}
+
+.logo-principal{
+    height: 150px;
+    width: 150px;
+    position: relative; left: -350px; right: 90px;
+
 }
