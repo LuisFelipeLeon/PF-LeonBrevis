@@ -13,8 +13,8 @@ body{
 }
 
 .imagen-destacados-juegos-mesa{
-    height: 480px;
-    width: 1300px;
+    height: 420px;
+    width: 1200px;
     display: flex;
     border-radius: 20px;
     display:block;
@@ -31,9 +31,11 @@ body{
 }
 
 
+
+
 .flex{
     /*background-color: darkslateblue;*/
-    height: 520px;
+    height: 510px;
     display: flex;
 
     /*direccion*/
@@ -67,6 +69,12 @@ body{
     /*align-content: space-between;*/
 }
 
+.flex img:hover{
+    transform: scale(2);
+    transition: ease-in 2s;
+}
+
+/*Elementos flex*/
 .hijo1{
     align-self: center;
 }
@@ -84,8 +92,8 @@ body{
 }
 
 .caja1-autores{
-    height: 470px;
-    width: 415px;
+    height: 490px;
+    width: 420px;
     display: flex;
 }
 
@@ -123,7 +131,8 @@ nav ul li{
 
 .autor__destacado{
     text-align: center;
-    height: 10px;
+    height: 50px;
+    position: relative; left: 20px;
 }
 
 .contacto__pagina{

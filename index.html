@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Libros</title>
+
+    <!--Conexion libreria michalsnik.github.io - aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--conexion hoja de estilos local css-->
     <link rel="stylesheet" href="./paginas/css/estilos.css">
 
@@ -64,7 +68,7 @@
             <div>
                 <h1>Destacados juveniles</h1>
                 <hr>
-                <img class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png" alt="destacados-juveniles">
+                <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png" alt="destacados-juveniles">
             </div>
         </section>
 
@@ -73,7 +77,8 @@
             <div>
                 <h1>Destacados juegos de mesa</h1>
                 <hr>
-                <img class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
+                <!--<h1>Destacados juegos de mesa</h1>-->
+                <img data-aos="zoom-in-up" class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
                     alt="destacados-juegos-mesa">
             </div>
         </section>
@@ -82,17 +87,18 @@
         <!--section autores destacados-->
         <section>
             <div>
-                <h1 class="autor__destacado">Autores destacados</h1>
+                <!--<h1 class="autor__destacado">Autores destacados</h1>-->
             </div>
         </section>
         <hr>
         <br>
         <!--cajas seccion de autores-->
+        <h1 class="autor__destacado">Autores destacados</h1>
         <section class="flex">
-            <div class="caja hijo1"><img class="caja1-autores" src="./recursos/imagenes/162.jpg"></div>
-            <div class="caja hijo1"><img class="caja1-autores" src="./recursos/imagenes/156.jpg"></div>
-            <div class="caja hijo1"><img class="caja1-autores" src="./recursos/imagenes/157.jpg"></div>
-            <div class="caja hijo1"><img class="caja1-autores" src="./recursos/imagenes/158.jpg"></div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/162.jpg"></div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/156.jpg"></div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/157.jpg"></div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/158.jpg"></div>
         </section>
     </main>
     <br>
@@ -105,6 +111,10 @@
         </ul>
         <small>Tienda libros ©Todos los derechos reservados</small>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
