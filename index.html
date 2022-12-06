@@ -34,7 +34,7 @@
 
             <!--Prueba de navbar bootstrap (no es definitivo)-->
             <nav>
-                <img class="logo-principal" src="./recursos/imagenes/logo2.gif">
+                <a href="./index.html"><img class="logo-principal" src="./recursos/imagenes/logo2.gif"></a>
                 <div class="container-fluid">
                     <ul>
                         <li><a class="navbar-brand" href="./index.html">
@@ -61,7 +61,7 @@
                 </div>
             </nav>
 
-            <!--navbar bootstrap-->
+            <!-- otro navbar bootstrap-->
             <!--<nav class="navbar navbar-expand-lg bg-light">
                 <div class="container">
                   <a class="navbar-brand" href="#">Tienda Libros</a>
@@ -92,7 +92,8 @@
             <div>
                 <h1>Destacados juveniles</h1>
                 <hr>
-                <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png" alt="destacados-juveniles">
+                <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png"
+                    alt="destacados-juveniles">
             </div>
         </section>
 
@@ -116,16 +117,23 @@
         </section>
         <hr>
         <br>
+
         <!--cajas seccion de autores-->
         <h1 class="autor__destacado">Autores destacados</h1>
         <section class="flex">
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/162.jpg"></div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/156.jpg"></div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/157.jpg"></div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/158.jpg"></div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/162.jpg">
+            </div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/156.jpg">
+            </div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/157.jpg">
+            </div>
+            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/158.jpg">
+            </div>
         </section>
+
     </main>
     <br>
+
     <!--pie de pagina con rrss-->
     <footer class="pie-pagina">
         <ul>
@@ -135,11 +143,61 @@
         </ul>
         <small>Tienda libros ©Todos los derechos reservados</small>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!--Prueba de footer con bootstrap-->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a>
+                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-face.png" style="width: 50px;"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a>
+                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/twit.png" style="width: 50px;"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a>
+                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-insta.png" style="width: 50px;"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a>
+                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/linkedin-logo.png" style="width: 50px;"></i>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/LuisFelipeLeon/TiendaLibros.git" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-github.png" style="width: 80px;"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Todos los derechos reservados:
+            <a class="text-white">Tienda Libros - CoderHouse</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- End of .container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>

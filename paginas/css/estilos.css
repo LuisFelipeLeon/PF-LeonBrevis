@@ -1,27 +1,27 @@
-body{
+body {
     background-image: url("../../recursos/imagenes/232.webp");
 }
 
-.imagen-destacados-juveniles{
+.imagen-destacados-juveniles {
     height: 550px;
     width: 1350px;
     display: flex;
     align-items: center;
     border-radius: 20px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
-.imagen-destacados-juegos-mesa{
+.imagen-destacados-juegos-mesa {
     height: 420px;
     width: 1200px;
     display: flex;
     border-radius: 20px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
-.caja{
+.caja {
     /*background-color: indianred;*/
     border: 4px solid rgb(5, 223, 194);
     color: white;
@@ -30,7 +30,7 @@ body{
     border-radius: 10px;
 }
 
-.flex{
+.flex {
     /*background-color: darkslateblue;*/
     height: 510px;
     display: flex;
@@ -39,8 +39,10 @@ body{
     /*flex-direction: row;*/
     /* row: default (horizontal) */
     /* column: vertical */
-    /*flex-direction: column;*/      /*vertical*/
-    /*flex-direction: column-reverse;*/   /* comienza desde la parte inferior*/
+    /*flex-direction: column;*/
+    /*vertical*/
+    /*flex-direction: column-reverse;*/
+    /* comienza desde la parte inferior*/
     /*flex-direction: row;*/
 
     /* desbordamiento */
@@ -60,57 +62,58 @@ body{
     /* posicionamiento en eje secundario*/
     /* stretch default*/
     align-items: center;
-    position: relative; left: 3%; 
+    position: relative;
+    left: 3%;
 
 
     /*align-content: space-between;*/
 }
 
-.flex img:hover{
+.flex img:hover {
     transform: scale(2);
     transition: ease-in 2s;
 }
 
 /*Elementos flex*/
-.hijo1{
+.hijo1 {
     align-self: center;
 }
 
-.hijo2{
+.hijo2 {
     align-self: flex-start;
 }
 
-.hijo3{
+.hijo3 {
     align-self: flex-end;
 }
 
-.hijo3{
+.hijo3 {
     align-self: stretch;
 }
 
-.caja1-autores{
+.caja1-autores {
     height: 490px;
     width: 420px;
     display: flex;
 }
 
-.literatura__juvenil-pag{
+.literatura__juvenil-pag {
     height: 550px;
     width: 1250px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     border-radius: 20px;
 }
 
-.juegos__mesa-pagina{
+.juegos__mesa-pagina {
     height: 650px;
     width: 1250px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     border-radius: 20px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,52 +123,88 @@ nav{
     text-align: center;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
 }
 
-.autor__destacado{
+.autor__destacado {
     text-align: center;
     height: 50px;
-    position: relative; left: 20px;
+    position: relative;
+    left: 20px;
 }
 
-.contacto__pagina{
+.contacto__pagina {
     text-align: center;
 
 }
 
-.pie-pagina{
+.pie-pagina {
     text-align: center;
 }
 
-.contenedor-destacados-juveniles{
+.contenedor-destacados-juveniles {
     align-items: center;
 }
 
-.destacados__juveniles_section{
+.destacados__juveniles_section {
     text-align: center;
 
 }
 
-.destacados__juegos_section{
+.destacados__juegos_section {
     text-align: center;
 }
 
-.juegos__mesa_section_pagina{
+.juegos__mesa_section_pagina {
     text-align: center;
 
 }
 
-.literatura__juvenil_section_pagina{
+.literatura__juvenil_section_pagina {
     text-align: center;
 }
 
-.logo-principal{
+.logo-principal {
     height: 150px;
     width: 150px;
-    position: relative; left: -350px; right: 90px;
+    position: relative;
+    left: -350px;
+    right: 90px;
 
+}
+
+.card-body-texto {
+    text-align: center;
+}
+
+/*Animacion zoom para img*/
+
+.animation-zoom {
+    position: absolute;
+    animation: zoomInZoomOut 4s;
+}
+
+/*.animation {
+    border: 1px solid black;
+    background-color: red;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}*/
+
+@keyframes zoomInZoomOut {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }
