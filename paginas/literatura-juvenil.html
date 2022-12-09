@@ -17,52 +17,43 @@
 
 <body>
     <header>
-        <!--navbar - menu principal-->
-        <!--<div class="nav__principal">
-            <h3>Tienda Libros</h3>
-            <nav>
-                <img class="logo-principal" src="../recursos/imagenes/logo2.gif">
-                <ul>
-                    <li><a href="../index.html">Home </a></li>
-                    <li><a href="./literatura-juvenil.html">Literatura Juvenil </a></li>
-                    <li><a href="./juegos-mesa.html">Juegos de mesa </a></li>
-                    <li><a href="./servicio-cliente.html">Servicio al cliente </a></li>
-                    <li><a href="./contacto.html">Contacto </a></li>
-                </ul>
-                <ul>
-                </ul>
-            </nav>
-        </div>-->
-
         <div class="nav__principal">
-            <h3>Tienda Libros</h3>
-
-            <!--Prueba de navbar bootstrap (no es definitivo)-->
-            <nav>
-                <a href="../index.html"><img class="logo-principal" src="../recursos/imagenes/logo2.gif"></a>
+            <!-- Prueba de otro navbar bootstrap-->
+            <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
-                    <ul>
-                        <li><a class="navbar-brand" href="../index.html">
-                                <img src="../recursos/imagenes/bookping.png" alt="Logo" width="30" height="24"
-                                    class="d-inline-block align-text-top">Home</a>
-                        </li>
-                        <li><a class="navbar-brand" href="../paginas/literatura-juvenil.html">
-                                <img src="../recursos/imagenes/readjuvenil.png" alt="Logo" width="30" height="24"
-                                    class="d-inline-block align-text-top">Literatura Juvenil</a>
-                        </li>
-                        <li><a class="navbar-brand" href="../paginas/juegos-mesa.html">
-                                <img src="../recursos/imagenes/jugando-a-las-cartas.png" alt="Logo" width="34"
-                                    height="28" class="d-inline-block align-text-top">Juegos de mesa</a>
-                        </li>
-                        <li><a class="navbar-brand" href="../paginas/servicio-cliente.html">
-                                <img src="../recursos/imagenes/cliente.png" alt="Logo" width="30" height="24"
-                                    class="d-inline-block align-text-top">Servicio al cliente</a>
-                        </li>
-                        <li><a class="navbar-brand" href="../paginas/contacto.html">
-                                <img src="../recursos/imagenes/mapa.png" alt="Logo" width="30" height="24"
-                                    class="d-inline-block align-text-top">Contacto</a>
-                        </li>
-                    </ul>
+                    <a class="navbar-brand" href="../index.html">Tienda Libros</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../paginas/literatura-juvenil.html"><img
+                                        src="../recursos/imagenes/readjuvenil.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Literatura Juvenil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../paginas/juegos-mesa.html"><img
+                                        src="../recursos/imagenes/jugando-a-las-cartas.png" alt="Logo" width="34"
+                                        height="28" class="d-inline-block align-text-top">Juegos de mesa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../paginas/servicio-cliente.html"><img
+                                        src="../recursos/imagenes/cliente.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Servicio al
+                                    Cliente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../paginas/contacto.html"><img
+                                        src="../recursos/imagenes/mapa.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -86,20 +77,20 @@
                 allowfullscreen></iframe>-->
         </section>
         <hr>
-        <br>
+        <!--<br>-->
 
-        <!--Grilla contenedor -->
+        <!--Grilla contenedor con "cards" con libros  -->
         <section class="container mt-5">
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-2">
                     <div class="card animation-zoom">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/principe_caspian_narnia.JPG"
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_piedra.JPG"
                             class="card-img-top" alt="..." style="height: 305px;">
                         <div class="card-body card-body-texto">
-                            <h6 class="card-title">Las Cronicas De Narnia El principe Caspian </h6>
+                            <h6 class="card-title">Harry Potter y la piedra filosofal</h6>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Autor: C. S. Lewis</li>
-                                <li class="list-group-item">336 páginas</li>
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">309 páginas</li>
                                 <li class="list-group-item">Rústica</li>
                             </ul>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -108,14 +99,14 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/senda_bestias.JPG" class="card-img-top"
-                            alt="..." style="height: 304px;">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_camara.JPG"
+                            class="card-img-top" alt="..." style="height: 305px;">
                         <div class="card-body card-body-texto">
-                            <h6 class="card-title">La Senda De Las Bestias</h6>
+                            <h6 class="card-title">Harry Potter y la camara secreta</h6>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Autor: Lian Tanner</li>
-                                <li class="list-group-item">376 páginas</li>
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">320 páginas</li>
                                 <li class="list-group-item">Rústica</li>
                             </ul>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -125,14 +116,14 @@
 
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/piramide_roja.JPG" class="card-img-top"
-                            alt="..." style="height: 306px;">
-                        <div class="card-body">
-                            <h6 class="card-title card-body-texto">La Piramide Roja</h6>
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_azkaban.JPG"
+                            class="card-img-top" alt="..." style="height: 305px;">
+                        <div class="card-body card-body-texto">
+                            <h6 class="card-title">Harry Potter y el prisionero de azkaban</h6>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Autor: Rick Riordan</li>
-                                <li class="list-group-item">192 páginas</li>
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">384 páginas</li>
                                 <li class="list-group-item">Tapa dura</li>
                             </ul>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -141,115 +132,59 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/escuela_bien_mal.JPG" class="card-img-top"
-                            alt="..." style="height: 306px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/dross_isaak.JPG" class="card-img-top"
-                            alt="..." style="height: 306px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/ladrona_luna.JPG" class="card-img-top"
-                            alt="..." style="height: 306px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_piedra.JPG"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_camara.JPG"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
-                        <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_azkaban.JPG"
-                            class="card-img-top" alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-success">Agregar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_caliz.JPG"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            class="card-img-top" alt="..." style="height: 306px;">
+                        <div class="card-body card-body-texto">
+                            <h6 class="card-title">Harry Potter y el caliz de fuego</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">672 páginas</li>
+                                <li class="list-group-item">Tapa dura</li>
+                            </ul>
                             <a href="#" class="btn btn-success">Agregar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/hp_principe.JPG" class="card-img-top"
-                            alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            alt="..." style="height: 306px;">
+                        <div class="card-body card-body-texto">
+                            <h6 class="card-title">Harry Potter y el misterio del principe</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">576 páginas</li>
+                                <li class="list-group-item">Tapa dura</li>
+                            </ul>
                             <a href="#" class="btn btn-success">Agregar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/harry_potter_reliquia.JPG"
+                            class="card-img-top" alt="..." style="height: 306px;">
+                        <div class="card-body card-body-texto">
+                            <h6 class="card-title">Harry Potter y las reliquias de la muerte</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Autor: J.K Rowling</li>
+                                <li class="list-group-item">704 páginas</li>
+                                <li class="list-group-item">Tapa dura</li>
+                            </ul>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/principe_caspian_narnia.JPG"
                             class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Las cronicas de narnia El principe caspian</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -258,11 +193,76 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/senda_bestias.JPG" class="card-img-top"
+                            alt="...">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">La senda de las bestias</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/piramide_roja.JPG" class="card-img-top"
+                            alt="..." style="height: 295px;">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">La Píramide Roja</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/escuela_bien_mal.JPG" class="card-img-top"
+                            alt="...">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Escuela del bien y mal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/dross_isaak.JPG" class="card-img-top"
+                            alt="..." style="height: 295px;">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Luna de pluton II</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
+                        <img data-aos="zoom-in-up" src="../recursos/imagenes/ladrona_luna.JPG" class="card-img-top"
+                            alt="...">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">La ladrona de la luna</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-success">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/valle_dragon.JPG" class="card-img-top"
                             alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">El valle del dragon</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -271,11 +271,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/pascualina.JPG" class="card-img-top"
                             alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Pasculina</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -284,11 +284,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/guardiana_ciudades.JPG"
-                            class="card-img-top" alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            class="card-img-top" alt="...">
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Ciudades perdidas</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -297,11 +297,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/got_hielo_fuego.JPG" class="card-img-top"
                             alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Juego de tronos I</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -310,11 +310,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/cuento_hadas_king.JPG" class="card-img-top"
                             alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">Cuento de hadas</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -323,11 +323,11 @@
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card">
+                    <div class="card animation-zoom">
                         <img data-aos="zoom-in-up" src="../recursos/imagenes/chica_tren.JPG" class="card-img-top"
                             alt="..." style="height: 295px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                        <div class="card-body card-body-texto">
+                            <h5 class="card-title">La chica del tren</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                             <a href="#" class="btn btn-success">Agregar</a>
@@ -337,15 +337,58 @@
             </div>
     </main>
     <br>
-    <!--pie de pagina con rrss-->
-    <footer class="pie-pagina">
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-        </ul>
-        <small>Tienda libros ©Todos los derechos reservados</small>
+
+    <!--Prueba de footer con bootstrap-->
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Seccion de RRSS -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-face.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/twit.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-insta.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/linkedin-logo.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/LuisFelipeLeon/TiendaLibros.git" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-github.png"
+                            style="width: 85px;"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Derechos de autor y fin pagina -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.048);">
+            <h6 class="text-dark">© 2022 Todos los derechos reservados:</h6>
+            <a class="text-dark">Tienda Libros - CoderHouse</a>
+        </div>
     </footer>
+
+    <!--Libreria bootstrap / script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

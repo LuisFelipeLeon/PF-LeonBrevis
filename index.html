@@ -19,7 +19,6 @@
 <body>
     <header>
         <div class="nav__principal">
-            <h3>Tienda Libros</h3>
             <!--Panel-->
             <!--<nav>
                 <img class="logo-principal" src="./recursos/imagenes/logo2.gif">
@@ -33,7 +32,7 @@
             </nav>-->
 
             <!--Prueba de navbar bootstrap (no es definitivo)-->
-            <nav>
+            <!--<nav>
                 <a href="./index.html"><img class="logo-principal" src="./recursos/imagenes/logo2.gif"></a>
                 <div class="container-fluid">
                     <ul>
@@ -59,38 +58,56 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav>-->
 
-            <!-- otro navbar bootstrap-->
-            <!--<nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
-                  <a class="navbar-brand" href="#">Tienda Libros</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Prueba de otro navbar bootstrap-->
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">Tienda Libros</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/literatura-juvenil.html"><img
+                                        src="./recursos/imagenes/readjuvenil.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Literatura Juvenil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/juegos-mesa.html"><img
+                                        src="./recursos/imagenes/jugando-a-las-cartas.png" alt="Logo" width="34"
+                                        height="28" class="d-inline-block align-text-top">Juegos de mesa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/servicio-cliente.html"><img
+                                        src="./recursos/imagenes/cliente.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Servicio al
+                                    Cliente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./paginas/contacto.html"><img
+                                        src="./recursos/imagenes/mapa.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>-->
+            </nav>
         </div>
     </header>
 
     <!--section destacados juveniles-->
     <main>
+        <br>
         <section class="destacados__juveniles_section">
             <div>
-                <h1>Destacados juveniles</h1>
+                <h3>Destacados juveniles</h3>
                 <hr>
                 <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png"
                     alt="destacados-juveniles">
@@ -100,10 +117,10 @@
         <!--section juegos de mesa-->
         <section class="destacados__juegos_section">
             <div>
-                <h1>Destacados juegos de mesa</h1>
+                <h3>Destacados juegos de mesa</h3>
                 <hr>
                 <!--<h1>Destacados juegos de mesa</h1>-->
-                <img data-aos="zoom-in-up" class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
+                <img data-aos="zoom-in-down" class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
                     alt="destacados-juegos-mesa">
             </div>
         </section>
@@ -118,77 +135,96 @@
         <hr>
         <br>
 
-        <!--cajas seccion de autores-->
-        <h1 class="autor__destacado">Autores destacados</h1>
-        <section class="flex">
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/162.jpg">
-            </div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/156.jpg">
-            </div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/157.jpg">
-            </div>
-            <div class="caja hijo1"><img data-aos="zoom-in-up" class="caja1-autores" src="./recursos/imagenes/158.jpg">
-            </div>
-        </section>
+        <!--Nueva caja seccion de autores-->
+        <div class="container-autores">
+            <h3>Autores destacados</h3>
+            <div class="row" style="width: 100%;">
+                <div class="col-10 col-md-3 espacio-autores">
+                    <img data-aos="zoom-in-up" class="card-img-autor card-autores" src="./recursos/imagenes/162.jpg" alt="Card image cap">
+                    <div class="card-body-autor">
+                        <h5 class="card-title-autor">Raiza Revelles</h5>
+                        <p class="card-text-autor">Raiza Revelles es una de las youtubers mexicanas más exitosas, que desde 2019 se ha enfocado en
+                            producir videos y contenido paranormal.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
 
+                <div class="col-10 col-md-3">
+                    <img data-aos="zoom-in-up" class="card-img-autor card-autores" src="./recursos/imagenes/156.jpg" alt="Card image cap">
+                    <div class="card-body-autor">
+                        <h5 class="card-title-autor">Claudia Ramirez</h5>
+                        <p class="card-text-autor">Un día decidió que quería compartir las historias que tanto amaba con las demás personas y creó un canal de Youtube llamado Clau Reads Books, en el que habla de la magia de los libros y el poder de las palabras.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                <div class="col-10 col-md-3">
+                    <img data-aos="zoom-in-up" class="card-img-autor card-autores" src="./recursos/imagenes/157.jpg" alt="Card image cap">
+                    <div class="card-body-autor">
+                        <h5 class="card-title-autor">Stephen King</h5>
+                        <p class="card-text-autor">Stephen Edwin King nació el 21 de septiembre de 1947 en Portland, en el estado de Maine (EE.UU.). En 1971 dio clases de inglés en Maine, al tiempo que escribía relatos cortos. Desde 1974 ha escrito varias historias que han sido leídas por millones de personas alrededor del mundo.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+                <div class="col-10 col-md-3">
+                    <img data-aos="zoom-in-up" class="card-img-autor card-autores" src="./recursos/imagenes/158.jpg" alt="Card image cap">
+                    <div class="card-body-autor">
+                        <h5 class="card-title-autor">John Green</h5>
+                        <p class="card-text-autor">Debutó como novelista con “Buscando a Alaska” (2005), historia iniciática y romántica ambientada en un internado que posee trazos autobiográficos de su etapa en Indian Springs.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <br>
 
-    <!--pie de pagina con rrss-->
-    <footer class="pie-pagina">
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-        </ul>
-        <small>Tienda libros ©Todos los derechos reservados</small>
-    </footer>
-
     <!--Prueba de footer con bootstrap-->
-
-    <!-- Remove the container if you want to extend the Footer to full width. -->
 
     <footer class="bg-light text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
+            <!-- Seccion de RRSS -->
             <section class="mb-4">
                 <!-- Facebook -->
                 <a>
-                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-face.png" style="width: 50px;"></i>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="./recursos/imagenes/logo-face.png"
+                            style="width: 50px;"></i>
                 </a>
 
                 <!-- Twitter -->
                 <a>
-                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/twit.png" style="width: 50px;"></i>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="./recursos/imagenes/twit.png"
+                            style="width: 50px;"></i>
                 </a>
 
                 <!-- Instagram -->
                 <a>
-                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-insta.png" style="width: 50px;"></i>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="./recursos/imagenes/logo-insta.png"
+                            style="width: 50px;"></i>
                 </a>
 
                 <!-- Linkedin -->
                 <a>
-                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/linkedin-logo.png" style="width: 50px;"></i>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="./recursos/imagenes/linkedin-logo.png"
+                            style="width: 50px;"></i>
                 </a>
 
                 <!-- Github -->
                 <a href="https://github.com/LuisFelipeLeon/TiendaLibros.git" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook-f"><img src="./recursos/imagenes/logo-github.png" style="width: 80px;"></i>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="./recursos/imagenes/logo-github.png"
+                            style="width: 85px;"></i>
                 </a>
             </section>
         </div>
 
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Todos los derechos reservados:
-            <a class="text-white">Tienda Libros - CoderHouse</a>
+        <!-- Derechos de autor y fin pagina -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.048);">
+            <h6 class="text-dark">© 2022 Todos los derechos reservados:</h6>
+            <a class="text-dark">Tienda Libros - CoderHouse</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
-    <!-- End of .container -->
+    <!--Libreria bootstrap / script -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

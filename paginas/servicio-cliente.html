@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Libros</title>
+
     <link rel="stylesheet" href="../paginas/css/estilos.css">
+
+    <!--conexion de bootstrap remoto-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Conexion libreria michalsnik.github.io - aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
-        <!--navbar - menu principal-->
-        <div class="nav__principal">
-            <h3>Tienda Libros</h3>
-            <nav>
-                <img class="logo-principal" src="../recursos/imagenes/logo2.gif">
-                <ul>
-                    <li><a href="../index.html">Home </a></li>
-                    <li><a href="./literatura-juvenil.html">Literatura Juvenil </a></li>
-                    <li><a href="./juegos-mesa.html">Juegos de mesa </a></li>
-                    <li><a href="./servicio-cliente.html">Servicio al cliente </a></li>
-                    <li><a href="./contacto.html">Contacto </a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Prueba de otro navbar bootstrap-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Tienda Libros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/literatura-juvenil.html"><img
+                                    src="../recursos/imagenes/readjuvenil.png" alt="Logo" width="30" height="24"
+                                    class="d-inline-block align-text-top">Literatura Juvenil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/juegos-mesa.html"><img
+                                    src="../recursos/imagenes/jugando-a-las-cartas.png" alt="Logo" width="34"
+                                    height="28" class="d-inline-block align-text-top">Juegos de mesa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/servicio-cliente.html"><img
+                                    src="../recursos/imagenes/cliente.png" alt="Logo" width="30" height="24"
+                                    class="d-inline-block align-text-top">Servicio al
+                                Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/contacto.html"><img
+                                    src="../recursos/imagenes/mapa.png" alt="Logo" width="30" height="24"
+                                    class="d-inline-block align-text-top">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-<br>
+    <br>
     <main>
         <section>
             <div>
-                <h1>Politicas de despacho</h1>
+                <h4>Politicas de despacho</h4>
                 <p>
-                    Nuestros productos con despacho a domicilio serán entregados a través de Transportistas externos a Antártica tanto en la Región Metropolitana como en el resto de las regiones de Chile. Los plazos máximos de entrega se especificarán en la ficha técnica de cada producto y en el carro de compras junto con su valor de despacho a pagar por parte del cliente al ingresar la comuna de despacho. Para eventos especiales (ejemplo Cybermonday) el plazo de entrega podrá extenderse y será informado en el carro de compras.
-El tiempo final de despacho está sujeto a los tiempos de distribución y servicio de los transportistas. Al momento de realizar tu pedido el sistema calculará automáticamente un estimado de recepción de éste según tu dirección, el cual comienza a contar una vez aprobado el pago y confirmada tu compra.
+                    Nuestros productos con despacho a domicilio serán entregados a través de Transportistas externos a
+                    Antártica tanto en la Región Metropolitana como en el resto de las regiones de Chile. Los plazos
+                    máximos de entrega se especificarán en la ficha técnica de cada producto y en el carro de compras
+                    junto con su valor de despacho a pagar por parte del cliente al ingresar la comuna de despacho. Para
+                    eventos especiales (ejemplo Cybermonday) el plazo de entrega podrá extenderse y será informado en el
+                    carro de compras.
+                    El tiempo final de despacho está sujeto a los tiempos de distribución y servicio de los
+                    transportistas. Al momento de realizar tu pedido el sistema calculará automáticamente un estimado de
+                    recepción de éste según tu dirección, el cual comienza a contar una vez aprobado el pago y
+                    confirmada tu compra.
                 </p>
             </div>
         </section>
@@ -38,9 +80,13 @@ El tiempo final de despacho está sujeto a los tiempos de distribución y servic
         <br>
         <section>
             <div>
-                <h1>Retiro en tienda</h1>
+                <h4>Retiro en tienda</h4>
                 <p>
-                    También contamos con el servicio de retiro en tienda, que no tiene costo de despacho para el cliente y puede retirar en la tienda deseada a partir de 48 horas hábiles en Santiago y 3 a 5 días hábiles en Regiones, una vez confirmada la compra y solo cuando el cliente reciba el email informando que su compra se encuentra disponible para ser retirada desde nuestras tiendas. Para eventos especiales (ejemplo Cybermonday) el plazo de entrega podrá extenderse y será informado en el carro de compras.
+                    También contamos con el servicio de retiro en tienda, que no tiene costo de despacho para el cliente
+                    y puede retirar en la tienda deseada a partir de 48 horas hábiles en Santiago y 3 a 5 días hábiles
+                    en Regiones, una vez confirmada la compra y solo cuando el cliente reciba el email informando que su
+                    compra se encuentra disponible para ser retirada desde nuestras tiendas. Para eventos especiales
+                    (ejemplo Cybermonday) el plazo de entrega podrá extenderse y será informado en el carro de compras.
                 </p>
             </div>
         </section>
@@ -48,11 +94,16 @@ El tiempo final de despacho está sujeto a los tiempos de distribución y servic
         <br>
         <section>
             <div>
-                <h1>Devoluciones o problemas con pedido</h1>
+                <h4>Devoluciones o problemas con pedido</h4>
                 <p>
-                    Si la dirección de entrega fuese errónea o simplemente no se encontró quien recibiera el pedido, éste será enviado de vuelta al centro de distribución del transportista, quien intentará nuevamente hacer una nueva entrega. En este caso un ejecutivo se pondrá en contacto vía mail o teléfono para resolver el problema.
+                    Si la dirección de entrega fuese errónea o simplemente no se encontró quien recibiera el pedido,
+                    éste será enviado de vuelta al centro de distribución del transportista, quien intentará nuevamente
+                    hacer una nueva entrega. En este caso un ejecutivo se pondrá en contacto vía mail o teléfono para
+                    resolver el problema.
 
-Si el ejecutivo no logra contactarse con el cliente para resolver el problema, la compra será anulada y el dinero será devuelto. En caso de pago vía Mercado pago, ya sea Débito o Crédito el abono se realizará a las 72 hrs. hábiles Una vez recepcionado el/los producto/s en nuestra bodega.
+                    Si el ejecutivo no logra contactarse con el cliente para resolver el problema, la compra será
+                    anulada y el dinero será devuelto. En caso de pago vía Mercado pago, ya sea Débito o Crédito el
+                    abono se realizará a las 72 hrs. hábiles Una vez recepcionado el/los producto/s en nuestra bodega.
                 </p>
             </div>
         </section>
@@ -60,15 +111,63 @@ Si el ejecutivo no logra contactarse con el cliente para resolver el problema, l
         <br>
     </main>
     <br>
-    <!--pie de pagina con rrss-->
-    <footer class="pie-pagina">
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-        </ul>
-        <small>Tienda libros  ©Todos los derechos reservados</small>
+
+    <!--Prueba de footer con bootstrap-->
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Seccion de RRSS -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-face.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/twit.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-insta.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a>
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/linkedin-logo.png"
+                            style="width: 50px;"></i>
+                </a>
+
+                <!-- Github -->
+                <a href="https://github.com/LuisFelipeLeon/TiendaLibros.git" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"><img data-aos="zoom-in-up" src="../recursos/imagenes/logo-github.png"
+                            style="width: 85px;"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Derechos de autor y fin pagina -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.048);">
+            <h6 class="text-dark">© 2022 Todos los derechos reservados:</h6>
+            <a class="text-dark">Tienda Libros - CoderHouse</a>
+        </div>
     </footer>
 
+    <!--Libreria bootstrap / script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>

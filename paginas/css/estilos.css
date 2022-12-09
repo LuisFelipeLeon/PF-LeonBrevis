@@ -2,23 +2,34 @@ body {
     background-image: url("../../recursos/imagenes/232.webp");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .imagen-destacados-juveniles {
-    height: 550px;
+    /*height: 550px;
     width: 1350px;
     display: flex;
     align-items: center;
-    border-radius: 20px;
+
     display: block;
-    margin: auto;
+    margin: auto;*/
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .imagen-destacados-juegos-mesa {
-    height: 420px;
+    /*height: 420px;
     width: 1200px;
     display: flex;
-    border-radius: 20px;
     display: block;
-    margin: auto;
+    margin: auto;*/
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .caja {
@@ -32,8 +43,10 @@ body {
 
 .flex {
     /*background-color: darkslateblue;*/
+    /*Parametros ocupados antes*/
     height: 510px;
     display: flex;
+    flex-direction: row;
 
     /*direccion*/
     /*flex-direction: row;*/
@@ -61,18 +74,32 @@ body {
 
     /* posicionamiento en eje secundario*/
     /* stretch default*/
+
+    /*Parametros ocupados antes*/
     align-items: center;
     position: relative;
     left: 3%;
 
 
     /*align-content: space-between;*/
+
+    /*Nuevo lineamiento responsive*/
+
+    /*width: 96%;
+    max-width: 960px;
+    margin: 0 auto;*/
 }
 
-.flex img:hover {
+/*.flex img:hover {
     transform: scale(2);
     transition: ease-in 2s;
-}
+}*/
+/* .container-autor{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-columns: 400px;
+} */
 
 /*Elementos flex*/
 .hijo1 {
@@ -92,9 +119,11 @@ body {
 }
 
 .caja1-autores {
-    height: 490px;
-    width: 420px;
+    /* height: 490px; */
+    /*width: 420px;*/
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .literatura__juvenil-pag {
@@ -151,11 +180,17 @@ nav ul li {
 
 .destacados__juveniles_section {
     text-align: center;
-
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1060px;
+    margin: 0 auto;
 }
 
 .destacados__juegos_section {
     text-align: center;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .juegos__mesa_section_pagina {
@@ -173,6 +208,7 @@ nav ul li {
     position: relative;
     left: -350px;
     right: 90px;
+    /*top: 100px;*/
 
 }
 
@@ -180,11 +216,33 @@ nav ul li {
     text-align: center;
 }
 
+.container-autores {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.espacio-autores{
+    /* padding: 0 30px; */
+    /* margin: 0 10px; */
+}
+
+.card-autores {
+    /* width: 450px;
+    height: 450px;
+    display: grid;
+    grid-gap: 50px; */
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
 /*Animacion zoom para img*/
 
 .animation-zoom {
     position: absolute;
-    animation: zoomInZoomOut 4s;
+    animation: zoomInZoomOut 2s;
 }
 
 /*.animation {
@@ -208,3 +266,13 @@ nav ul li {
         transform: scale(1, 1);
     }
 }
+
+/* @media (max-width: 576px){ 
+    .container-autor{
+        grid-template-columns: (1,1fr); */
+        /* display:flex */
+        /* grid-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-columns: 400px; 
+    /* }
+} */
