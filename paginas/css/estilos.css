@@ -167,6 +167,15 @@ nav ul li {
 
 .contacto__pagina {
     text-align: center;
+}
+
+.servicio_cliente_parrafo{
+    justify-content: center;
+    margin: 2%;
+
+}
+
+.servicio_cliente_container{
 
 }
 
@@ -223,10 +232,10 @@ nav ul li {
     text-align: center;
 }
 
-.espacio-autores{
+/*.espacio-autores{
     /* padding: 0 30px; */
     /* margin: 0 10px; */
-}
+/*}*/
 
 .card-autores {
     /* width: 450px;
