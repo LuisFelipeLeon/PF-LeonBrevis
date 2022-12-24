@@ -1,0 +1,21 @@
+{
+  "name": "preentrega2leonbrevis",
+  "version": "1.0.0",
+  "description": "por: Luis Felipe Leon Brevis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/style.scss css/estilos.css -w",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisFelipeLeon/TiendaLibros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisFelipeLeon/TiendaLibros/issues"
+  },
+  "homepage": "https://github.com/LuisFelipeLeon/TiendaLibros#readme"
+}

@@ -1,0 +1,122 @@
+.destacados__juveniles_section {
+    text-align: center;
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.destacados__juegos_section {
+    text-align: center;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.imagen-destacados-juveniles {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagen-destacados-juegos-mesa {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container-autores {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-autores {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.caja {
+    border: 4px solid rgb(5, 223, 194);
+    color: white;
+    font-size: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.flex {
+    height: 510px;
+    display: flex;
+    flex-direction: row;
+
+    /*direccion*/
+    /*flex-direction: row;*/
+    /* row: default (horizontal) */
+    /* column: vertical */
+    /*flex-direction: column;*/
+    /*vertical*/
+    /*flex-direction: column-reverse;*/
+    /* comienza desde la parte inferior*/
+    /*flex-direction: row;*/
+
+    /* desbordamiento */
+    /* nowrap default */
+    /*flex-wrap: nowrap;*/
+    /*flex-wrap: nowrap;*/
+
+    /* shorthand */
+    /*flex-flow: row wrap;*/
+
+    /* posicionamiento en eje principal*/
+    /*justify-content: space-between;*/
+
+    /* centrado*/
+    /*justify-content: center;*/
+
+    /* posicionamiento en eje secundario*/
+    /* stretch default*/
+
+    /*Parametros ocupados antes*/
+    align-items: center;
+    position: relative;
+    left: 3%;
+
+
+    /*align-content: space-between;*/
+
+    /*Nuevo lineamiento responsive*/
+
+    /*width: 96%;
+    max-width: 960px;
+    margin: 0 auto;*/
+}
+
+/*.flex img:hover {
+    transform: scale(2);
+    transition: ease-in 2s;
+}*/
+
+/*Elementos flex*/
+.hijo1 {
+    align-self: center;
+}
+
+.hijo2 {
+    align-self: flex-start;
+}
+
+.hijo3 {
+    align-self: flex-end;
+}
+
+.hijo3 {
+    align-self: stretch;
+}
+
+.caja1-autores {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
