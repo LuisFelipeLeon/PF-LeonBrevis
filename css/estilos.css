@@ -13,7 +13,6 @@ body {
   margin: 0 auto;
   width: 96%;
   max-width: 1060px;
-  margin: 0 auto;
 }
 
 .destacados__juegos_section {
@@ -194,6 +193,16 @@ nav ul li {
 
 .card-body-texto {
   text-align: center;
+}
+
+.c-img-carousel{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.c-item-carousel{
+  height: 550px;
 }
 
 /*Animacion zoom para img*/

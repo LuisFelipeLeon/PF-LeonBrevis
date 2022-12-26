@@ -247,6 +247,16 @@ nav ul li {
     border-radius: 15px;
 }
 
+.c-img-carousel{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.c-item-carousel{
+    height: 580px;
+}
+
 /*Animacion zoom para img*/
 
 .animation-zoom {
