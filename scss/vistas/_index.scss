@@ -6,17 +6,17 @@
     margin: 0 auto;
 }
 
+.imagen-destacados-juveniles {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
 .destacados__juegos_section {
     text-align: center;
     width: 96%;
     max-width: 960px;
     margin: 0 auto;
-}
-
-.imagen-destacados-juveniles {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
 }
 
 .imagen-destacados-juegos-mesa {
@@ -50,53 +50,10 @@
     height: 510px;
     display: flex;
     flex-direction: row;
-
-    /*direccion*/
-    /*flex-direction: row;*/
-    /* row: default (horizontal) */
-    /* column: vertical */
-    /*flex-direction: column;*/
-    /*vertical*/
-    /*flex-direction: column-reverse;*/
-    /* comienza desde la parte inferior*/
-    /*flex-direction: row;*/
-
-    /* desbordamiento */
-    /* nowrap default */
-    /*flex-wrap: nowrap;*/
-    /*flex-wrap: nowrap;*/
-
-    /* shorthand */
-    /*flex-flow: row wrap;*/
-
-    /* posicionamiento en eje principal*/
-    /*justify-content: space-between;*/
-
-    /* centrado*/
-    /*justify-content: center;*/
-
-    /* posicionamiento en eje secundario*/
-    /* stretch default*/
-
-    /*Parametros ocupados antes*/
     align-items: center;
     position: relative;
     left: 3%;
-
-
-    /*align-content: space-between;*/
-
-    /*Nuevo lineamiento responsive*/
-
-    /*width: 96%;
-    max-width: 960px;
-    margin: 0 auto;*/
 }
-
-/*.flex img:hover {
-    transform: scale(2);
-    transition: ease-in 2s;
-}*/
 
 /*Elementos flex*/
 .hijo1 {
@@ -134,7 +91,6 @@
     position: relative;
     left: -350px;
     right: 90px;
-    /*top: 100px;*/
 }
 
 .literatura__juvenil_section_pagina {
@@ -143,7 +99,6 @@
 
 .juegos__mesa_section_pagina {
     text-align: center;
-
 }
 
 nav {
@@ -160,4 +115,14 @@ nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
+}
+
+.c-img-carousel{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+  
+.c-item-carousel{
+    height: 550px;
 }
