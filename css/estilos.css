@@ -1,5 +1,5 @@
 body {
-  background-image: url(../recursos/imagenes/232.webp);
+  background-image: url("../../recursos/imagenes/232.webp");
 }
 
 * {
@@ -25,6 +25,17 @@ body {
     transform: scale(1, 1);
   }
 }
+.container-carousel-juveniles {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(58%);
+}
+
 .destacados__juveniles_section {
   text-align: center;
   margin: 0 auto;
@@ -33,17 +44,17 @@ body {
   margin: 0 auto;
 }
 
+.imagen-destacados-juveniles {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 .destacados__juegos_section {
   text-align: center;
   width: 96%;
   max-width: 960px;
   margin: 0 auto;
-}
-
-.imagen-destacados-juveniles {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
 }
 
 .imagen-destacados-juegos-mesa {
@@ -118,7 +129,6 @@ body {
   position: relative;
   left: -350px;
   right: 90px;
-  /*top: 100px;*/
 }
 
 .literatura__juvenil_section_pagina {
@@ -196,36 +206,20 @@ nav ul li {
   text-align: center;
 }
 
-/* .carouselExampleControls{
-  padding:5%;
-} */
-
-.container-carousel-juveniles {
-  width: 100%; 
-  max-width: 1450px;
-  margin: 0 auto;
-  text-align: center; 
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: invert(58%);
-}
-
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-}
-
-.map-responsive iframe{
-  left:0;
+.map-responsive iframe {
+  left: 0;
   margin: auto;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
 
 /*# sourceMappingURL=estilos.css.map */
