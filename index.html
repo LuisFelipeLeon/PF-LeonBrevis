@@ -7,7 +7,8 @@
 
     <!--Palabras clave-->
     <meta name="keywords" content="libros, juegos de mesa, autores, historia, ebook, puzzles, cartas">
-    <meta name="description" content="Ven a conocer nuestra tienda, tenemos una variedad tremenda en libros, juegos de mesa y mas">
+    <meta name="description"
+        content="Ven a conocer nuestra tienda, tenemos una variedad tremenda en libros, juegos de mesa y mas">
 
     <title>Tienda Libros - Juegos de mesa - Autores</title>
 
@@ -25,11 +26,11 @@
 <body>
     <header>
         <!--Navbar bootstrap-->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light" data-aos="zoom-in-up">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">Tienda Libros</a><img
-                src="./recursos/imagenes/biblioteca.png" alt="Logo" width="40" height="30"
-                class="d-inline-block align-text-top">
+                    src="./recursos/imagenes/biblioteca.png" alt="Logo" width="40" height="30"
+                    class="d-inline-block align-text-top">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,8 +39,8 @@
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./index.html"><img
-                                src="./recursos/imagenes/casa.png" alt="Logo" width="30" height="25"
-                                class="d-inline-block align-text-top">Home</a>
+                                    src="./recursos/imagenes/casa.png" alt="Logo" width="30" height="25"
+                                    class="d-inline-block align-text-top">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./paginas/literatura-juvenil.html"><img
@@ -105,32 +106,15 @@
         </button>
     </div>
 
-    
-    <!--section destacados juveniles-->
+
     <main>
         <br>
-        <section class="destacados__juveniles_section">
-            <div">
-                <h3>Destacados juveniles <a href="./paginas/literatura-juvenil.html"><img
-                            src="./recursos/imagenes/eyes24.png"></a></h3>
 
-                <hr>
+        <!--seccion destacados juveniles con carrusel-->
 
-                <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png"
-                    alt="destacados-juveniles">
-                </div>
-        </section>
-
-        <!--section juegos de mesa-->
-        <section class="destacados__juegos_section">
-            <div>
-                <h3>Destacados juegos de mesa</h3>
-                <hr>
-                <!--<h1>Destacados juegos de mesa</h1>-->
-                <img data-aos="zoom-in-down" class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
-                    alt="destacados-juegos-mesa">
-            </div>
-        </section>
+        <h3 class="text-center">Destacados juveniles <a href="./paginas/literatura-juvenil.html"><img
+                    src="./recursos/imagenes/eyes24.png"></a></h3>
+        <hr>
 
         <div id="carouselExampleControls" class="carousel carousel-dark slide container-carousel-juveniles"
             data-bs-ride="carousel">
@@ -217,8 +201,115 @@
             </button>
         </div>
 
-        <hr>
         <br>
+
+        <!--Section destacados juveniles estatico-->
+
+        <section class="destacados__juveniles_section">
+            <div">
+                <!-- <h3>Destacados juveniles <a href="./paginas/literatura-juvenil.html"><img -->
+                <!-- src="./recursos/imagenes/eyes24.png"></a></h3> -->
+
+                <hr>
+
+                <img data-aos="zoom-in-up" class="imagen-destacados-juveniles" src="./recursos/imagenes/123.png"
+                    alt="destacados-juveniles">
+                </div>
+        </section>
+        <br>
+
+        <!--Seccion destacados juegos de mesa con carrusel-->
+
+        <h3 class="text-center">Destacados juegos de mesa<a href="./paginas/literatura-juvenil.html"><img
+                    src="./recursos/imagenes/eyes24.png"></a></h3>
+
+        <div id="carouselExampleControls" class="carousel carousel-dark slide container-carousel-juveniles"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card" style="width: 180px;">
+                                <img src="./recursos/imagenes/pandemic.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 257px; right: 50px;">
+                                <img src="./recursos/imagenes/catan_auge.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 137px; right: 20px;">
+                                <img src="./recursos/imagenes/timeline_chile.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 172px; right: 114px;">
+                                <img src="./recursos/imagenes/ciudadelass.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 267px; right: 170px;">
+                                <img src="./recursos/imagenes/espacio-catan.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 218px; right: 135px;">
+                                <img src="./recursos/imagenes/dixit_journey.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card" style="width: 200px; right: 14px;">
+                                <img src="./recursos/imagenes/isla_prohibida.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 265px; right: 44px;">
+                                <img src="./recursos/imagenes/catan-pirata.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 195px; right: 14px;">
+                                <img src="./recursos/imagenes/carcassss.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 270px; right: 44px;">
+                                <img src="./recursos/imagenes/catan_colonos.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 135px; right: 5px;">
+                                <img src="./recursos/imagenes/timeline_inventos.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" style="width: 242px; right: 100px;">
+                                <img src="./recursos/imagenes/stella.JPG" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--section juegos de mesa estatico-->
+        <section class="destacados__juegos_section">
+            <div>
+                <!-- <h3>Destacados juegos de mesa</h3> -->
+                <hr>
+                <!--<h1>Destacados juegos de mesa</h1>-->
+                <img data-aos="zoom-in-down" class="imagen-destacados-juegos-mesa" src="./recursos/imagenes/124.jpeg"
+                    alt="destacados-juegos-mesa">
+            </div>
+        </section>
+
+        <hr>
+        <!-- <br> -->
 
         <!--Caja seccion de autores-->
         <div class="container-autores">
