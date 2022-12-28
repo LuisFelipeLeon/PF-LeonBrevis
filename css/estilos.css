@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../recursos/imagenes/232.webp");
+  background-image: url(../recursos/imagenes/232.webp);
 }
 
 * {
@@ -209,6 +209,22 @@ nav ul li {
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   filter: invert(58%);
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  margin: auto;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 
