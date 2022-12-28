@@ -28,3 +28,14 @@ body {
         transform: scale(1, 1);
     }
 }
+
+.container-carousel-juveniles {
+    width: 100%; 
+    max-width: 1450px;
+    margin: 0 auto;
+    text-align: center; 
+}
+  
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(58%);
+}
