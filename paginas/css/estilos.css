@@ -175,10 +175,6 @@ nav ul li {
 
 }
 
-.servicio_cliente_container{
-
-}
-
 .pie-pagina {
     text-align: center;
 }
@@ -232,10 +228,9 @@ nav ul li {
     text-align: center;
 }
 
-/*.espacio-autores{
-    /* padding: 0 30px; */
-    /* margin: 0 10px; */
-/*}*/
+.espacio-autores{
+    margin: 50%;
+}
 
 .card-autores {
     /* width: 450px;
