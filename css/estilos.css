@@ -223,4 +223,24 @@ nav ul li {
   position: absolute;
 }
 
+.h1_literatura_juvenil{
+  font-size: 20px;
+  text-align: center;
+}
+
+.h1_juegos_mesa{
+  font-size: 20px;
+  text-align: center;
+}
+
+.h1_servicio_cliente{
+  font-size: 20px;
+  text-align: center;
+}
+
+.h1_contacto{
+  font-size: 30px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=estilos.css.map */
